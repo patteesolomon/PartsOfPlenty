@@ -1,0 +1,113 @@
+/* Reset default styles */
+  .test {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the font and color scheme */
+  body {
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.355);
+  }
+  
+  /* Give the header a fixed position and set the background color and font color */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the navigation links */
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  /* Add a hover effect to the navigation links */
+  header a:hover {
+    color: #ccc;
+  }
+  
+  /* Style the main content area */
+  main {
+    margin: 80px auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  /* Style the product cards */
+  .product-card {
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgb(80, 255, 173);
+    border-radius: 10px;
+  }
+  
+  /* Style the product images */
+  .product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  /* Style the product info */
+  .product-card .product-info {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Style the product name */
+  .product-card .product-info h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  
+  /* Style the product description */
+  .product-card .product-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the product price */
+  .product-card .product-info .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style the "Add to Cart" button */
+  .product-card .product-info .add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Add a hover effect to the "Add to Cart" button */
+  .product-card .product-info .add-to-cart:hover {
+    background-color: #444;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }

@@ -3,8 +3,10 @@ const mongoose = require('mongoose');
 const express = require('express');
 const methodOverride = require('method-override');
 const itemType = require('./models/itemType');
+const { application } = require("express");
 const app = express();
-const port = 3000;
+const port = 3001;
+const path = require('path');
 
 //induces order 
     //use 
@@ -20,6 +22,10 @@ const port = 3000;
 // creates a new middle ware function to override
 // the req method property with a new value
 app.use(methodOverride("_method"));
+//app.use(express.static("public")); // serve files from public statically
+//app.use('/public', express.static('public'));
+app.use(express.static(__dirname + '/public')); // Keep?
+
 //parsing incomming requests
 app.use(express.urlencoded({ extended: false }));
 
@@ -43,7 +49,7 @@ mongoose.connection.once("open", () => {
     console.log("connected to Mongo");
 });
 
-//
+// root url
 app.get("/", (req, res) =>{
     res.send('hello');
 });
@@ -80,6 +86,7 @@ app.get("/itemType/seed", (req, res) => {
   );
 });
 
+// index route 
 app.get('/itemType', (req, res) => {
     itemType.find({}, (error, tec) => {
       res.render("Index", {
@@ -98,6 +105,7 @@ app.delete("/itemType/:id", (req, res) => {
     res.redirect("/itemType");
   });
 });
+
 // Update - Modifying a record
 app.put("/itemType/:id", (req, res) => {
   if (req.body.sponsored === "on") {
@@ -105,10 +113,11 @@ app.put("/itemType/:id", (req, res) => {
   } else {
     req.body.sponsored = false;
   }
-  if (req.body.remaining === "BUY") {
-      itemType.findByIdAndUpdate(req.params.id, { $inc: { "quantity": -1 } }, (err, item) => {
-      res.redirect(`/itemType/${req.params.id}`); // redirecting to the Show page
-    });
+  if (req.params.quantity === "BUY") {
+    itemType.findByIdAndUpdate(req.params.quantity, {$inc: {quantity: - 1}}
+      (err, item) => {
+        res.redirect(`/itemType/${req.params.id}`); // redirecting to the Show page
+      });
     }
     else
       itemType.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
@@ -116,36 +125,21 @@ app.put("/itemType/:id", (req, res) => {
       });
 });
 
-// app.put("/itemType/:id", (req, res) => {
-//   
-
-//   else if (req.body.quantity <= 0)
-//   {
-//     
-//   }
-//   else
-//   {
-//     itemType.findByIdAndRemove(req.params.id, (err, item) => {
-//       res.redirect(`/itemType/${req.params.id}`); // redirecting to the Show page
-//     });
-//   }
-// });
-
-
 // Create - send the filled form to db and create a new record
 app.post("/itemType", (req, res) => {
-  if (req.body.sponsored === "on") {
-    //if checked, req.body.readyToEat is set to 'on'
-    req.body.sponsored = true; //do some data correction
+  if(req.body.sponsored === "on") {
+    //if checked, req.body.sponsored is set to 'on'
+    req.body.sponsored = true;
   } else {
-    //if not checked, req.body.readyToEat is undefined
-    req.body.sponsored = false; //do some data correction
+    //if not checked, req.body.sponsored  is undefined
+    req.body.sponsored = false;
   }
-
   itemType.create(req.body, (error, createditemType) => {
     res.redirect("/itemType");
   });
 });
+
+
 // Edit - Get the form with the record to update
 app.get("/itemType/:id/edit", (req, res) => {
   itemType.findById(req.params.id, (err, founditemType) => {
@@ -169,6 +163,7 @@ app.get("/itemType/:indexOfitemTypeArray", function (req, res) {
   });
 });
 
+// port listener
 app.listen(port, () => {
     console.log("listening");
   });

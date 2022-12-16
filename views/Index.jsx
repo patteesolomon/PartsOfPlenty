@@ -1,10 +1,12 @@
 const React = require('react');
 const itemType = require('../models/itemType.js');
+const DefaultLayout = require('./DefaultLayout.jsx');
+//const myStyle = require('../public/style.css');
 class Index extends React.Component {
     render() {
         return (
-        <div> 
-            <h1> Inventory </h1>
+        <DefaultLayout> 
+            <h1 className="test"> Inventory </h1>
             <ul>
             {this.props.items.map((item, i) => {
                 return (
@@ -26,7 +28,8 @@ class Index extends React.Component {
             <nav>
                 <a href="/itemType/new">Add a new item</a>
             </nav>
-        </div>     
+            
+        </DefaultLayout>     
         );
     }
 }
