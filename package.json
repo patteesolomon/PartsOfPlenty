@@ -7,13 +7,23 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "azuka",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
     "mongoose": "^6.8.0",
-    "react": "^18.2.0"
+    "nodemon": "^2.0.20",
+    "react": "^18.2.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patteesolomon/PartsOfPlenty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patteesolomon/PartsOfPlenty/issues"
+  },
+  "homepage": "https://github.com/patteesolomon/PartsOfPlenty#readme",
   "description": ""
 }
