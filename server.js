@@ -54,38 +54,6 @@ app.get("/", (req, res) =>{
     res.send('hello');
 });
 
-// Seed route - populate the database for testing
-app.get("/itemType/seed", (req, res) => {
-  itemType.create(
-    [
-      {
-        name: "grapefruit",
-        description: "pink",
-        provider: "DerpFruits",
-        number: 1,
-        sponsored: true,
-      },
-      {
-        name: "grape",
-        description: "purple",
-        provider: "DerpFruits",
-        number: 1,
-        sponsored: false,
-      },
-      {
-        name: "avocado",
-        description: "green",
-        provider: "DerpFruits",
-        number: 1,
-        sponsored: true,
-      },
-    ],
-    (err, data) => {
-      res.redirect("/itemType");
-    }
-  );
-});
-
 // index route 
 app.get('/itemType', (req, res) => {
     itemType.find({}, (error, tec) => {
@@ -107,22 +75,24 @@ app.delete("/itemType/:id", (req, res) => {
 });
 
 // Update - Modifying a record
-app.put("/itemType/:id", (req, res) => {
-  if (req.body.sponsored === "on") {
-    req.body.sponsored = true;
+app.put("/itemType/:id/update", (req, res) => {
+  if (req.body.inStock === "on") {
+    req.body.inStock = true;
   } else {
-    req.body.sponsored = false;
+    req.body.inStock = false;
   }
-  if (req.params.quantity === "BUY") {
-    itemType.findByIdAndUpdate(req.params.quantity, {$inc: {quantity: - 1}}
-      (err, item) => {
+
+  if (req.body.quantity === "BUY"){
+    Item.findByIdAndUpdate(req.params.id, { $inc: { "quantity": -1 } }, (err, updatedItem) => {
         res.redirect(`/itemType/${req.params.id}`); // redirecting to the Show page
       });
     }
-    else
-      itemType.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
-        res.redirect("/itemType");
-      });
+  else{
+    itemType.findByIdAndUpdate(req.params.id, req.body, (err, updatedItem) => {
+      console.log(updatedItem);
+      res.redirect(`/itemType/${req.params.id}`);
+    });
+  }
 });
 
 // Create - send the filled form to db and create a new record
@@ -133,6 +103,11 @@ app.post("/itemType", (req, res) => {
   } else {
     //if not checked, req.body.sponsored  is undefined
     req.body.sponsored = false;
+  }
+  if (req.body.inStock === "on") {
+    req.body.inStock = true;
+  } else {
+    req.body.inStock = false;
   }
   itemType.create(req.body, (error, createditemType) => {
     res.redirect("/itemType");

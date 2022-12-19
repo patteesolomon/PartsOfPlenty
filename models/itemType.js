@@ -8,7 +8,8 @@ const ItemSchema = new mongoose.Schema(
     provider: {type: String, required: false},
     likes: {type: Number, required: false },
     quantity: {type: Number, required: false},
-    sponsored: {type: Boolean, required: false}
+    sponsored: {type: Boolean, required: false},
+    inStock: {type: Boolean, required: false}
   }
 );
 

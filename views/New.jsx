@@ -12,6 +12,7 @@ class New extends React.Component {
           Likes: <input type="number" name="likes"/><br/>
           Quantity: <input type="number" name="quantity"/><br/>
           Sponsored: <input type="checkbox" name="sponsored" /><br/>
+          In-Stock: <input type="checkbox" name="inStock"/><br/>
           <input type='submit' name='' value='Create Item' />
         </form>
       </div>

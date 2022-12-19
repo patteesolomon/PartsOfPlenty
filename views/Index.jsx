@@ -16,7 +16,8 @@ class Index extends React.Component {
                     `${item.description}` +
                     `${item.provider}` + 
                     `${item.likes}` + 
-                    `${item.quantity}`} </a>
+                    `${item.quantity}` +
+                    `${item.inStock}`} </a>
                     <a href={`/itemType/${item.id}/edit`}>Edit</a>
                             <form action={`/itemType/${item.id}?_method=DELETE`} method="POST">
                             <input type="submit" value="DELETE"/>
