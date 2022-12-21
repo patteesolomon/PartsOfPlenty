@@ -4,7 +4,7 @@ class New extends React.Component {
   render() {
     return (
       <div>
-        <h1>New Item page</h1>
+        <h1>New Item Page</h1>
         <form action='/itemType' method='POST'>
           Name: <input type="text" name="name" /><br/>
           Description: <input type="text" name="description"/><br/>
@@ -13,6 +13,7 @@ class New extends React.Component {
           Quantity: <input type="number" name="quantity"/><br/>
           Sponsored: <input type="checkbox" name="sponsored" /><br/>
           In-Stock: <input type="checkbox" name="inStock"/><br/>
+          Image: <input type="text" name="img" /><br/>
           <input type='submit' name='' value='Create Item' />
         </form>
       </div>

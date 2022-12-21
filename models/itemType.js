@@ -9,7 +9,8 @@ const ItemSchema = new mongoose.Schema(
     likes: {type: Number, required: false },
     quantity: {type: Number, required: false},
     sponsored: {type: Boolean, required: false},
-    inStock: {type: Boolean, required: false}
+    inStock: {type: Boolean, required: false}, // you need an img to add
+    img: {type: String, required: false}
   }
 );
 

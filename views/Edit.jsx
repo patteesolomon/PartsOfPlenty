@@ -15,7 +15,9 @@ class Edit extends React.Component{
           Quantity: <input type="number" name="quantity" defaultValue={this.props.itemType.quantity}/><br/>
           Sponsored: <input type="checkbox" name="sponsored" defaultValue={this.props.itemType.sponsored}/><br/>
           In-Stock: {
-                    this.props.itemType.quantity > 0 ? <input type="checkbox" name="inStock" defaultChecked />: <input type="checkbox" name="inStock"/> }
+                    this.props.itemType.inStock ? <input type="checkbox" name="inStock" defaultChecked />: <input type="checkbox" name="inStock"/> }
+          <br />
+          Image Url: <input type="text" name="img" defaultValue={this.props.itemType.img}/>
           <br/>
           <input type="submit" value="Submit Changes"/>
       </form>

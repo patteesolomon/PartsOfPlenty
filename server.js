@@ -81,18 +81,22 @@ app.put("/itemType/:id/update", (req, res) => {
   } else {
     req.body.inStock = false;
   }
-
-  if (req.body.quantity === "BUY"){
-    Item.findByIdAndUpdate(req.params.id, { $inc: { "quantity": -1 } }, (err, updatedItem) => {
-        res.redirect(`/itemType/${req.params.id}`); // redirecting to the Show page
-      });
-    }
-  else{
     itemType.findByIdAndUpdate(req.params.id, req.body, (err, updatedItem) => {
       console.log(updatedItem);
       res.redirect(`/itemType/${req.params.id}`);
     });
-  }
+});
+
+app.put('/itemType/buy/:id', (req, res) => {
+  itemType.findById(req.params.id, (err, founditemType) => {
+      let newItem = founditemType;
+      newItem.quantity = newItem.quantity - 1;
+
+      itemType.findByIdAndUpdate(req.params.id,  newItem, (err, founditemType) => {
+          console.log('updated item');
+          res.redirect(`/itemType/${req.params.id}`);
+      });
+  });
 });
 
 // Create - send the filled form to db and create a new record

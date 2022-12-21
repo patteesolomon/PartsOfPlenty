@@ -14,7 +14,7 @@
   }
   
   /* Give the header a fixed position and set the background color and font color */
-  header {
+  h1 {
     position: fixed;
     top: 0;
     left: 0;
