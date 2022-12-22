@@ -5,9 +5,9 @@ class Show extends React.Component {
     render() {
         var Item = this.props.itemType;
             return (
-            <DefaultLayout>
+            <div style={{backgroundColor: '#737373', font: 'Serif', color: 'orange', padding: '5px', height: 'fitContent', textAlign: "center", textShadow: 'rgb(173, 60, 60)', boxShadow: '0 4px 6px rgb(80, 255, 173)'}}>
             <div className="buy-container">
-            <h1> Product Stock </h1>
+            <h1> {Item.name} </h1>
             <h3 className="stock">
             </h3>
             <div>
@@ -16,10 +16,12 @@ class Show extends React.Component {
                 {'Name: ' + `${Item.name}`.charAt(0).toUpperCase() + `${Item.name}`.slice(1)}
                 <br />
                 {`Quantity: ${Item.quantity}`}
+                <br />
+                {`Description: ${Item.description}`}
             </div>
                 {'In-Stock: ' + `${Item.inStock}`}
                 <br />
-                <a href="/itemType/">Back</a>
+                <a href="/itemType">Back</a>
                 <br />
                 <br />
                 {/* 
@@ -28,11 +30,11 @@ class Show extends React.Component {
                 the only thing that works. 
                 */}
             <form action={`/itemType/buy/${Item.id}?_method=PUT`} method="POST"> 
-            {this.props.itemType.quantity > 0 ? <input className="buy-button" type="submit" value="buy"/> :
+            {this.props.itemType.quantity > 0 ? <input className="buy-button" type="submit" value="BUY"/> :
             <h3>Out of stock</h3>}
             </form>
         </div>
-        </DefaultLayout>
+        </div>
         );
     }
 }

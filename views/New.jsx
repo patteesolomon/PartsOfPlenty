@@ -3,7 +3,7 @@ const React = require("react");
 class New extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{backgroundColor: '#737373', font: 'Serif', color: 'white', padding: '5px', height: 'fitContent', textAlign: "center", textShadow: '0 4px 6px rgb(80, 255, 173)', boxShadow: '0 4px 6px rgb(80, 255, 173)'}}>
         <h1>New Item Page</h1>
         <form action='/itemType' method='POST'>
           Name: <input type="text" name="name" /><br/>

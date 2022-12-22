@@ -1,37 +1,55 @@
 const React = require('react');
-const itemType = require('../models/itemType.js');
 const DefaultLayout = require('./DefaultLayout.jsx');
-//const myStyle = require('../public/style.css');
 class Index extends React.Component {
     render() {
         return (
         <DefaultLayout> 
-            <h1 className="test"> Inventory </h1>
-            <ul>
+            <h1 className="test"> Parts O' Plenty! </h1>
+            <div className ="bodyi">
+                <ul>
             {this.props.items.map((item, i) => {
-                return (
-                    <li><a href={`/itemType/${item.id}`}>
+                return(
+                    <main>
+                        <li>
+                        <div className="product-card">
+                        <img src={`${item.img}`}/>
+                        <div className='product-info'>
+                        <br />
+                        <a href={`/itemType/${item.id}`}>
                         {item.name.substring(0,1).toUpperCase() 
-                        + item.name.substring(1) +
-                    `${item.description}` +
-                    `${item.provider}` + 
-                    `${item.likes}` + 
-                    `${item.quantity}` +
-                    `${item.inStock}`} </a>
+                        + item.name.substring(1)}</a>
+                        <br />
+                        <p>
+                        <h3>{`${item.description}`}</h3>
+                        <br /> 
+                        Provider: {`${item.provider}`}
+                        <br />
+                        Likes: {`${item.likes}`}
+                        <br /> 
+                        Quantity: {`${item.quantity}`}
+                        <br />
+                        In Stock : {(item.inStock === true)? `Yes` : `No`}
+                    </p>
+                    </div>
                     <a href={`/itemType/${item.id}/edit`}>Edit</a>
+                    </div>
+                    <br />
                             <form action={`/itemType/${item.id}?_method=DELETE`} method="POST">
                             <input type="submit" value="DELETE"/>
                         </form>
+                        <br />
                     </li>
+                </main>
                 )
             })}    
             </ul>
+            </div>
             <nav>
                 <a href="/itemType/new">Add a new item</a>
             </nav>
-            
-        </DefaultLayout>     
-        );
+            <footer> Ardent Corp. Ltd </footer>
+        </DefaultLayout> 
+        )
     }
 }
 
