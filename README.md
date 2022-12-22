@@ -62,3 +62,60 @@ public/ - contains the stylesheet used in the project.
 views - All pages being in jsx format are located here. 
 .env - file for the database information
 .gitignore - for the nodeModules so that that isn't tracked when git pushes as well as the .env
+
+Routes
+--
+Index route: This route leads to the index using the |get| verb Home Route 
+http://localhost:3001/itemType/
+New route: This is for the new creation page. With the |get| It allows for the new creation of an item
+http://localhost:3001/itemType/new 
+Delete route: This is for the deletion. With the |get| verb it allows for deletion.
+http://localhost:3001/itemType/:id/delete
+Updtate route: The update route leads to the input submission for the itemType update using the |put| verb.
+http://localhost:3001/itemType/:id/update
+Create route: This Creates and add a new itemType to the index page using the |Post| verb.
+http://localhost:3001/itemType < - this uses a forum submission 
+Buy route: This Takes an item away from the itemType's quantity using the |Put|
+http://localhost:3001/itemType/buy/:id < - this also uses a form submission.
+Edit route: This returns an edited item using the |get| verb
+http://localhost:3001/:id/edit
+Show route: This returns a route that has the items id
+http://localhost:3001/:id 
+
+Installation Instructions
+--
+
+Store Functionality
+--
+1. anyone can use this for CRUD ops in a much more clearer sense.
+
+Known Issuses
+--
+an unseeable type error keeps rising. But doesn't effect the fronend.
+It's unknown if whether or not it effects the database or backend.
+
+Roadmap
+-- 
+See if maybe db commands might fix the issue stated above.
+Refactor with TypeScript
+See about implementing Next.js
+
+Acknowledgements
+--
+To Cycle 28
+
+Resources
+--
+https://github.com/KasperKain/PerScholas-Fruits
+https://github.com/glnewton/storeApp 
+https://chat.openai.com/chat
+
+Disclaimer
+-- 
+I do not own any of the images found from the links I have given in the source code.
+I do not own their respective products featured in those images or thier intellectual properties.
+
+License
+--
+None 
+https://github.com/patteesolomon
