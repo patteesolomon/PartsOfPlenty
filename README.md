@@ -134,4 +134,6 @@ Disclaimer
 I do not own any of the images found from the links I have given in the source code.
 I do not own their respective products featured in those images or thier intellectual properties.
 
-https://github.com/patteesolomon
+Click here to go back to my Git 
+--
+https://github.com/patteesolomon <--
