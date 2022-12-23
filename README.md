@@ -8,8 +8,6 @@ This Shows off multiple pages with different but consistent stylings. Two differ
 This Also allows for that user to send the data input from the frontend to a MongoDB server stored online.
 Git Repo -> https://github.com/patteesolomon/PartsOfPlenty
 
-Live Site -> 
-
 "Project Requirements"
 --
 https://github.com/patteesolomon/PartsOfPlenty/blob/main/docs/requirements.md
@@ -40,7 +38,6 @@ Technologies, Languages, Libraries & Platforms Used
 MERN Stack = MongoDB, Express, React, NodeJS
 HTML
 CSS
-Render (soon)
 
 Features
 --
@@ -84,7 +81,28 @@ http://localhost:3001/:id
 
 Installation Instructions
 --
-
+follow this guide.
+https://www.lifewire.com/install-bash-on-windows-10-4101773  <----
+![popins1](https://user-images.githubusercontent.com/113143898/209275182-5cfcf06a-760d-4983-b109-532aa455046b.PNG)
+Click here.
+![popins2](https://user-images.githubusercontent.com/113143898/209275241-5fa8690e-c2a2-436b-87d3-a828b65d8c27.PNG)
+Click this.
+![popins3](https://user-images.githubusercontent.com/113143898/209275273-36f32ef1-c313-47d1-86f5-b5227b669ac7.PNG)
+Select an empty folder.
+![popins4](https://user-images.githubusercontent.com/113143898/209275363-df64a226-a755-47e9-a64f-3971748ae006.PNG)
+Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
+![popins6](https://user-images.githubusercontent.com/113143898/209275528-f8faf388-5dcd-4a2b-b9f9-455710a0c4c7.PNG)
+When its done go to the folder cloned.
+![popins7](https://user-images.githubusercontent.com/113143898/209275589-0d13f4ce-27a0-44ba-8262-5288fa54fea7.PNG)
+Then Open it with VS Code
+![popins8](https://user-images.githubusercontent.com/113143898/209275613-d2524dac-9e4e-4687-8ec5-983bec10481e.PNG)
+then type into you terminal "touch .env"
+![popins9](https://user-images.githubusercontent.com/113143898/209275968-beb8b9cc-cfbc-4b4d-9a60-1dfde22ac430.PNG)
+create a free mongo db. Grab your URL URI and add it along with it's passkey pasted in.... Here
+ ![popins10](https://user-images.githubusercontent.com/113143898/209276764-2cdd6008-a684-4f78-85df-e518a87d315d.PNG)
+Save that then type "nodemon" into your terminal to run the app
+![popins11](https://user-images.githubusercontent.com/113143898/209276844-82bac2a3-12b8-4dde-91d9-5a6a96456634.PNG)
+the port number is 3001. http://localhost:3001/itemType < - and From here you should have it..
 Store Functionality
 --
 1. anyone can use this for CRUD ops in a much more clearer sense.
@@ -109,13 +127,11 @@ Resources
 https://github.com/KasperKain/PerScholas-Fruits
 https://github.com/glnewton/storeApp 
 https://chat.openai.com/chat
+https://www.lifewire.com/install-bash-on-windows-10-4101773
 
 Disclaimer
 -- 
 I do not own any of the images found from the links I have given in the source code.
 I do not own their respective products featured in those images or thier intellectual properties.
 
-License
---
-None 
 https://github.com/patteesolomon
