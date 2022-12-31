@@ -30,15 +30,22 @@
   
   /* Style the navigation links */
   a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 18px;
-    margin-right: 20px;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    
   }
   
   /* Add a hover effect to the navigation links */
-  a:hover {
-    color: #ccc;
+  a:hover {text-decoration: none;
+    color: #00f39e;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
   }
   
   /* Style the main content area */
@@ -84,7 +91,7 @@
   .product-card .product-info p {
     font-size: 16px;
     line-height: 1.5;
-    color: rgb(172, 161, 161);
+    color: rgb(239, 140, 140);
     margin-bottom: 20px;
   }
   
@@ -95,6 +102,22 @@
     color: rgb(175, 86, 86);
   }
   
+  nav{
+    text-align: center;
+    box-shadow: 0 4px 6px rgb(80, 255, 173);
+    border-radius: 10px;
+    border-width: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+    background-color: rgb(53, 53, 53);
+
+    display: flex;
+    border-radius: 10px;
+    border-width: 20px;
+    height: fit-content;
+    box-sizing: content-box;
+  }
+
   /* Style the footer */
   footer {
     background-color: #333;

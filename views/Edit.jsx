@@ -4,7 +4,7 @@ const React = require('react');
 class Edit extends React.Component{
   render() {
         return (
-        <div style={{backgroundColor: '#737373', font: 'Serif', color: 'white', padding: '5px', height: 'fitContent', textAlign: "center" ,textShadow: '0 4px 6px rgb(80, 255, 173)', boxShadow: '0 4px 6px rgb(80, 255, 173)'}}>
+        <div style={{backgroundColor: '#737373', font: 'Serif', color: 'white', padding: '5px', height: 'fitContent', textAlign: "center", textShadow: '0 4px 6px rgb(80, 255, 173)', boxShadow: '0 4px 6px rgb(80, 255, 173)'}}>
           <div className='product-card'>
           <h3> {`${this.props.itemType.quantity}`} Items Remaining </h3>
           </div>

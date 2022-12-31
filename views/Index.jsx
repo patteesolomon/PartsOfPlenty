@@ -45,7 +45,11 @@ class Index extends React.Component {
             </ul>
             </div>
             <nav>
-                <a href="/itemType/new">Add a new item</a>
+                
+            <a>Add an item here!<form action={`/itemType/new?_method=NEW`} method="GET">
+                            <input type="submit" value="NEW"/>
+                        </form></a>
+                
             </nav>
             <footer> Ardent Corp. Ltd </footer>
         </DefaultLayout> 
