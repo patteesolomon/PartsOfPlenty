@@ -5,7 +5,7 @@ const methodOverride = require('method-override');
 const itemType = require('./models/itemType');
 const { application } = require("express");
 const app = express();
-const port = 3001;
+const port = 3000;
 const path = require('path');
 
 //induces order 
@@ -24,7 +24,7 @@ const path = require('path');
 app.use(methodOverride("_method"));
 //app.use(express.static("public")); // serve files from public statically
 //app.use('/public', express.static('public'));
-app.use(express.static(__dirname + '/public')); // Keep?
+app.use(express.static(__dirname + '/public')); // Keep
 
 //parsing incomming requests
 app.use(express.urlencoded({ extended: false }));
@@ -82,7 +82,6 @@ app.put("/itemType/:id/update", (req, res) => {
     req.body.inStock = false;
   }
     itemType.findByIdAndUpdate(req.params.id, req.body, (err, updatedItem) => {
-      console.log(updatedItem);
       res.redirect(`/itemType/${req.params.id}`);
     });
 });
@@ -92,8 +91,7 @@ app.put('/itemType/buy/:id', (req, res) => {
       let newItem = founditemType;
       newItem.quantity = newItem.quantity - 1;
 
-      itemType.findByIdAndUpdate(req.params.id,  newItem, (err, founditemType) => {
-          console.log('updated item');
+      itemType.findByIdAndUpdate(req.params.id, newItem, (err, founditemType) => {
           res.redirect(`/itemType/${req.params.id}`);
       });
   });
@@ -108,7 +106,8 @@ app.post("/itemType", (req, res) => {
     //if not checked, req.body.sponsored  is undefined
     req.body.sponsored = false;
   }
-  if (req.body.inStock === "on") {
+  if (req.body.inStock === "on") 
+  {
     req.body.inStock = true;
   } else {
     req.body.inStock = false;

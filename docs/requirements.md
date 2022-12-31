@@ -4,12 +4,19 @@ Project Details
 🔴 Mandatory To Pass:
 MVP - Minimum Viable Product Your App Must Posess All 7 RESTful Routes
 URL	HTTP Verb	Action	Notes/ Examples
-# /products/	GET	index	INDEX when a user types localhost:3000/products in browser this route shows a list or index of all products
-# /products/new	GET	new	NEW when a user types localhost:3000/products/new in browser this route shows the user a form to create a NEW fruit
-# /products/:id	DELETE	destroy	DELETE initiates a delete request through a form submission with action = http://localhost:3000/products/:idOfProductand allows the application the ability to delete a product
-# /products/:id	PUT	update	UPDATE initiates a put request through a form submission with action = http://localhost:3000/products/:idOfProductand allows the application the ability to Update data about a product
-# /products	POST	create	CREATE initiates a post request through a form submission with action = http://localhost:3000/products/and allows the application the ability to Createa product
-# /products/:id/edit	GET	edit	EDIT when a user types localhost:3000/products/:idOfProduct/edit in browser shows the user a form to edit a product
+# /products/GET	index
+INDEX when a user types localhost:3000/products
+ in browser this route shows a list or index of all products
+# /products/new	GET	new	
+NEW when a user types localhost:3000/products/new in browser this route shows the user a form to create a NEW fruit
+# /products/:id	DELETE	
+destroy	DELETE initiates a delete request through a form submission with action = http://localhost:3000/products/:idOfProductand allows the application the ability to delete a product
+# /products/:id	PUT	update
+	UPDATE initiates a put request through a form submission with action = http://localhost:3000/products/:idOfProductand allows the application the ability to Update data about a product
+# /products	POST create	
+CREATE initiates a post request through a form submission with action = http://localhost:3000/products/and allows the application the ability to Createa product
+# /products/:id/edit GET
+	edit	EDIT when a user types localhost:3000/products/:idOfProduct/edit in browser shows the user a form to edit a product
 # /products/:id	GET	show	
 # SHOW when a user types localhost:3000/products/:idOfProductshows the user an Individual fruit in the browser
 
