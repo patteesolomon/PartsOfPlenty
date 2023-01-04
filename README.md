@@ -87,9 +87,9 @@ https://www.lifewire.com/install-bash-on-windows-10-4101773  <----
 Click here.
 ![CLickTHis](https://user-images.githubusercontent.com/113143898/210654741-890d8c82-e3dd-4a1c-8f75-cb137f196ea4.png)
 Click this.
-![popins3](https://user-images.githubusercontent.com/113143898/209275273-36f32ef1-c313-47d1-86f5-b5227b669ac7.PNG)
+![selectAnEmptyFolder](https://user-images.githubusercontent.com/113143898/210655649-b362c68a-9bc5-41a3-a3db-71d284f8acf0.PNG)
 Select an empty folder.
-![popins4](https://user-images.githubusercontent.com/113143898/209275363-df64a226-a755-47e9-a64f-3971748ae006.PNG)
+![start the comp](https://user-images.githubusercontent.com/113143898/210655763-6db71cd9-1bb3-440f-96d7-e5196a2ba116.png)
 Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
 ![popins6](https://user-images.githubusercontent.com/113143898/209275528-f8faf388-5dcd-4a2b-b9f9-455710a0c4c7.PNG)
 When its done go to the folder cloned.
