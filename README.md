@@ -91,9 +91,9 @@ Click this.
 Select an empty folder.
 ![start the comp](https://user-images.githubusercontent.com/113143898/210655763-6db71cd9-1bb3-440f-96d7-e5196a2ba116.png)
 Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
-![popins6](https://user-images.githubusercontent.com/113143898/209275528-f8faf388-5dcd-4a2b-b9f9-455710a0c4c7.PNG)
+![Wehn its done goto the folder cloned](https://user-images.githubusercontent.com/113143898/210657003-1bac6e66-562a-45dd-8b47-6f3d00aeb0bf.PNG)
 When its done go to the folder cloned.
-![popins7](https://user-images.githubusercontent.com/113143898/209275589-0d13f4ce-27a0-44ba-8262-5288fa54fea7.PNG)
+![Then Open it with VS Code](https://user-images.githubusercontent.com/113143898/210656976-f3dd8865-2fca-443b-a4cb-60095d2fe467.png)
 Then Open it with VS Code
 ![popins8](https://user-images.githubusercontent.com/113143898/209275613-d2524dac-9e4e-4687-8ec5-983bec10481e.PNG)
 then type into you terminal "touch .env"
