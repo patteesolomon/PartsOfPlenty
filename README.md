@@ -83,9 +83,9 @@ Installation Instructions
 --
 follow this guide.
 https://www.lifewire.com/install-bash-on-windows-10-4101773  <----
-![popins1](https://user-images.githubusercontent.com/113143898/209275182-5cfcf06a-760d-4983-b109-532aa455046b.PNG)
+![Click Here](https://user-images.githubusercontent.com/113143898/210654665-688ddb0f-acd7-4388-bcba-3c853a576d04.png)
 Click here.
-![popins2](https://user-images.githubusercontent.com/113143898/209275241-5fa8690e-c2a2-436b-87d3-a828b65d8c27.PNG)
+![CLickTHis](https://user-images.githubusercontent.com/113143898/210654741-890d8c82-e3dd-4a1c-8f75-cb137f196ea4.png)
 Click this.
 ![popins3](https://user-images.githubusercontent.com/113143898/209275273-36f32ef1-c313-47d1-86f5-b5227b669ac7.PNG)
 Select an empty folder.
