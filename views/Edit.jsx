@@ -16,9 +16,6 @@ class Edit extends React.Component{
           Likes: <input type="number" name="likes" defaultValue={this.props.itemType.likes}/><br/><br />
           Quantity: <input type="number" name="quantity" defaultValue={this.props.itemType.quantity}/><br/><br />
           Sponsored: <input type="checkbox" name="sponsored" defaultValue={this.props.itemType.sponsored}/><br/><br />
-          In-Stock: {
-                    this.props.itemType.inStock ? <input type="checkbox" name="inStock" defaultChecked />: <input type="checkbox" name="inStock"/> }
-          <br />
           Image Url: <input type="text" name="img" defaultValue={this.props.itemType.img}/>
           <br/>
           <input type="submit" value="Submit Changes"/>
