@@ -85,23 +85,32 @@ follow this guide.
 https://www.lifewire.com/install-bash-on-windows-10-4101773  <----
 ![Click Here](https://user-images.githubusercontent.com/113143898/210654665-688ddb0f-acd7-4388-bcba-3c853a576d04.png)
 Click here.
+
 ![CLickTHis](https://user-images.githubusercontent.com/113143898/210654741-890d8c82-e3dd-4a1c-8f75-cb137f196ea4.png)
 Click this.
+
 ![selectAnEmptyFolder](https://user-images.githubusercontent.com/113143898/210655649-b362c68a-9bc5-41a3-a3db-71d284f8acf0.PNG)
 Select an empty folder.
+
 ![start the comp](https://user-images.githubusercontent.com/113143898/210655763-6db71cd9-1bb3-440f-96d7-e5196a2ba116.png)
 Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
+
 ![Wehn its done goto the folder cloned](https://user-images.githubusercontent.com/113143898/210657003-1bac6e66-562a-45dd-8b47-6f3d00aeb0bf.PNG)
 When its done go to the folder cloned.
 Then Open it with VS Code
+
 ![popins8](https://user-images.githubusercontent.com/113143898/209275613-d2524dac-9e4e-4687-8ec5-983bec10481e.PNG)
 then type into you terminal "touch .env"
+
 ![popins9](https://user-images.githubusercontent.com/113143898/209275968-beb8b9cc-cfbc-4b4d-9a60-1dfde22ac430.PNG)
 create a free mongo db. Grab your URL URI and add it along with it's passkey pasted in.... Here
+
  ![popins10](https://user-images.githubusercontent.com/113143898/209276764-2cdd6008-a684-4f78-85df-e518a87d315d.PNG)
 Save that then type "nodemon" into your terminal to run the app
+
 ![popins11](https://user-images.githubusercontent.com/113143898/209276844-82bac2a3-12b8-4dde-91d9-5a6a96456634.PNG)
 the port number is 3001. http://localhost:3001/itemType < - and From here you should have it..
+
 Store Functionality
 --
 1. anyone can use this for CRUD ops in a much more clearer sense.
