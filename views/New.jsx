@@ -3,7 +3,7 @@ const React = require("react");
 class New extends React.Component {
   render() {
     return (
-      <div style={{backgroundColor: '#737373', font: 'Serif', color: 'white', padding: '5px',* textAlign: "center", textShadow: '0 4px 6px rgb(80, 255, 173)', boxShadow: '0 4px 6px rgb(80, 255, 173)'}}>
+      <div style={{backgroundColor: '#737373', font: 'Serif', color: 'white', padding: '5px', height: 'fit-content', textAlign: "center", textShadow: '0 4px 6px rgb(80, 255, 173)', boxShadow: '0 4px 6px rgb(80, 255, 173)'}}>
         <h1>New Item Page</h1>
         <form action='/itemType' method='POST'>
           Name: <input type="text" name="name" /><br/>
@@ -12,7 +12,6 @@ class New extends React.Component {
           Likes: <input type="number" name="likes"/><br/>
           Quantity: <input type="number" name="quantity"/><br/>
           Sponsored: <input type="checkbox" name="sponsored" /><br/>
-          In-Stock: <input type="checkbox" name="inStock"/><br/>
           Image: <input type="text" name="img" /><br/>
           <input type='submit' name='' value='Create Item' />
         </form>
