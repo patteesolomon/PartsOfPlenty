@@ -99,7 +99,7 @@ Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
 When its done go to the folder cloned.
 Then Open it with VS Code
 
-![209275613-d2524dac-9e4e-4687-8ec5-983bec10481e](https://user-images.githubusercontent.com/113143898/210874975-65e3cbcb-7d6f-4c2c-9a73-63e59d9c0de8.png)
+![THen Type](https://user-images.githubusercontent.com/113143898/210875155-b9f29f06-d3fd-45bd-aa1f-85f11315afc3.png)
 
 then type into your terminal "touch .env"
 
