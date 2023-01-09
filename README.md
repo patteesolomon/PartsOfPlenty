@@ -1,39 +1,54 @@
+
 # "Parts O' Plenty"
 --
 About
 -
-@@ -14,7 +14,7 @@ https://github.com/patteesolomon/PartsOfPlenty/blob/main/docs/requirements.md
+This is a backend-application that lets a layman coder look at the middle ware, Front end, and back end of React, Express and Node.js. 
+This allows the coder to look at CSS styling for each page.
+This Shows off multiple pages with different but consistent stylings. Two different methods to be exact.
+This Also allows for that user to send the data input from the frontend to a MongoDB server stored online.
+Git Repo -> https://github.com/patteesolomon/PartsOfPlenty
+
+"Project Requirements"
+--
+https://github.com/patteesolomon/PartsOfPlenty/blob/main/docs/requirements.md
 
 Video Link Presentation
 --
 https://youtu.be/tSirkQ_svBo
-https://youtu.be/bfc-dXunzBY
 
 ScreenShots
 ![pop1](https://user-images.githubusercontent.com/113143898/209063963-1af2916f-45f8-4caf-9356-96d62d680cda.PNG)
 ![pop2](https://user-images.githubusercontent.com/113143898/209063973-7d888396-b84c-4108-b0d5-405f448e9913.PNG)
 ![pop3](https://user-images.githubusercontent.com/113143898/209063978-366c839a-7597-498b-939e-b969f5042c4c.PNG)
+
 Build Stats
 --
 It's housed on GitHub for now.
+
 Code Style
 --
 Mostly Functional programming and some object oriented programming was used in the project.
+
 Design
 --
 Color Palette was modified after obtaining a css file from Open AI ChatBot.
+
 Technologies, Languages, Libraries & Platforms Used
 --
 MERN Stack = MongoDB, Express, React, NodeJS
 HTML
 CSS
+
 Features
 --
 1. With the simple front end part of the application, anyone can use basic CRUD operations. 
 Even add whatever they want to it using this GitHub as a template.
+
 Project Directory
 --
 ![image](https://user-images.githubusercontent.com/113143898/209065867-1c8e265c-90d8-4369-a996-0b83048c926c.png)
+
 Files & Directories
 --
 server.js - The file for running the middleware where all routes are located
@@ -45,6 +60,7 @@ public/ - contains the stylesheet used in the project.
 views - All pages being in jsx format are located here. 
 .env - file for the database information
 .gitignore - for the nodeModules so that that isn't tracked when git pushes as well as the .env
+
 Routes
 --
 Index route: This route leads to the index using the |get| verb Home Route 
@@ -63,6 +79,7 @@ Edit route: This returns an edited item using the |get| verb
 http://localhost:3001/:id/edit
 Show route: This returns a route that has the items id
 http://localhost:3001/:id 
+
 Installation Instructions
 --
 follow this guide.
@@ -90,28 +107,34 @@ the port number is 3001. http://localhost:3001/itemType < - and From here you sh
 Store Functionality
 --
 1. anyone can use this for CRUD ops in a much more clearer sense.
+
 Known Issuses
 --
 an unseeable type error keeps rising. But doesn't effect the fronend.
 It's unknown if whether or not it effects the database or backend.
+
 Roadmap
 -- 
 See if maybe db commands might fix the issue stated above.
 Refactor with TypeScript
 See about implementing Next.js
+
 Acknowledgements
 --
 To Cycle 28
+
 Resources
 --
 https://github.com/KasperKain/PerScholas-Fruits
 https://github.com/glnewton/storeApp 
 https://chat.openai.com/chat
 https://www.lifewire.com/install-bash-on-windows-10-4101773
+
 Disclaimer
 -- 
 I do not own any of the images found from the links I have given in the source code.
 I do not own their respective products featured in those images or thier intellectual properties.
+
 Click here to go back to my Git 
 --
 https://github.com/patteesolomon <--
