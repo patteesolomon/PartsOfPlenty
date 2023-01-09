@@ -100,11 +100,10 @@ Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
 ![pic6](https://user-images.githubusercontent.com/113143898/211386453-a288ee06-e370-4637-adf7-4760e7ed88fb.png)
 
 When its done go to the folder cloned.
+Then Open it with VS Code
+then type into you terminal "touch .env"
 ![pic7](https://user-images.githubusercontent.com/113143898/211386473-66fedb6a-1599-4ec9-895a-38ca0aed2661.png)
 
-Then Open it with VS Code
-![popins8](https://user-images.githubusercontent.com/113143898/209275613-d2524dac-9e4e-4687-8ec5-983bec10481e.PNG)
-then type into you terminal "touch .env"
 ![popins9](https://user-images.githubusercontent.com/113143898/209275968-beb8b9cc-cfbc-4b4d-9a60-1dfde22ac430.PNG)
 create a free mongo db. Grab your URL URI and add it along with it's passkey pasted in.... Here
  ![popins10](https://user-images.githubusercontent.com/113143898/209276764-2cdd6008-a684-4f78-85df-e518a87d315d.PNG)
