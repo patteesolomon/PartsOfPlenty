@@ -84,17 +84,24 @@ Installation Instructions
 --
 follow this guide.
 https://www.lifewire.com/install-bash-on-windows-10-4101773  <----
-![popins1](https://user-images.githubusercontent.com/113143898/209275182-5cfcf06a-760d-4983-b109-532aa455046b.PNG)
+![1](https://user-images.githubusercontent.com/113143898/211386261-1244c775-cfc2-49ca-8887-1d77f7b3498c.png)
+
 Click here.
-![popins2](https://user-images.githubusercontent.com/113143898/209275241-5fa8690e-c2a2-436b-87d3-a828b65d8c27.PNG)
+![2](https://user-images.githubusercontent.com/113143898/211386311-8fd78c79-c370-4dc6-8827-91b902ff0d43.png)
+
 Click this.
-![popins3](https://user-images.githubusercontent.com/113143898/209275273-36f32ef1-c313-47d1-86f5-b5227b669ac7.PNG)
+![opening this folder click this pic3](https://user-images.githubusercontent.com/113143898/211386339-5c3a4739-d4f4-4647-b249-90bb2b0d1ecc.png)
+
+![pic4](https://user-images.githubusercontent.com/113143898/211386366-dc977d4c-d4cc-4230-a815-cc040568136f.png)
 Select an empty folder.
-![popins4](https://user-images.githubusercontent.com/113143898/209275363-df64a226-a755-47e9-a64f-3971748ae006.PNG)
+![pic5](https://user-images.githubusercontent.com/113143898/211386420-6c6380b8-2f22-437e-81cd-977a9bdc1d92.png)
+
 Using the BASH terminal Type "git clone [URL]" then watch the magic of git.
-![popins6](https://user-images.githubusercontent.com/113143898/209275528-f8faf388-5dcd-4a2b-b9f9-455710a0c4c7.PNG)
+![pic6](https://user-images.githubusercontent.com/113143898/211386453-a288ee06-e370-4637-adf7-4760e7ed88fb.png)
+
 When its done go to the folder cloned.
-![popins7](https://user-images.githubusercontent.com/113143898/209275589-0d13f4ce-27a0-44ba-8262-5288fa54fea7.PNG)
+![pic7](https://user-images.githubusercontent.com/113143898/211386473-66fedb6a-1599-4ec9-895a-38ca0aed2661.png)
+
 Then Open it with VS Code
 ![popins8](https://user-images.githubusercontent.com/113143898/209275613-d2524dac-9e4e-4687-8ec5-983bec10481e.PNG)
 then type into you terminal "touch .env"
