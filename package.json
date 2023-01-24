@@ -1,29 +1,32 @@
 {
-  "name": "shopapp",
+  "name": "partsofplenty",
   "version": "1.0.0",
+  "description": "--\r About\r -\r This is a backend-application that lets a layman coder look at the middle ware, Front end, and back end of React, Express and Node.js. \r This allows the coder to look at CSS styling for each page.\r This Shows off multiple pages with different but consistent stylings. Two different methods to be exact.\r This Also allows for that user to send the data input from the frontend to a MongoDB server stored online.\r Git Repo -> https://github.com/patteesolomon/PartsOfPlenty",
   "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "azuka",
-  "license": "MIT",
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "mongoose": "^6.8.0",
-    "nodemon": "^2.0.20",
-    "react": "^18.2.0",
-    "react-dom": "^16.14.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patteesolomon/PartsOfPlenty.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/patteesolomon/PartsOfPlenty/issues"
   },
   "homepage": "https://github.com/patteesolomon/PartsOfPlenty#readme",
-  "description": ""
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-react-views": "^0.11.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.8.4"
+  }
 }
