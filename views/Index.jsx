@@ -16,7 +16,7 @@ class Index extends React.Component {
                         <div className='product-info'>
                         <br />
                         <a href={`/itemType/${item.id}`}>
-                        {item.name.substring(0,1).toUpperCase() 
+                        {item.name.substring(0,1).toUpperCase()
                         + item.name.substring(1)}</a>
                         <br />
                         <p>
@@ -41,7 +41,7 @@ class Index extends React.Component {
                     </li>
                 </main>
                 )
-            })}    
+            })}
             </ul>
             </div>
             <nav>
