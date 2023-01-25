@@ -7,6 +7,7 @@ const { application } = require("express");
 const app = express();
 const port = 3000;
 const path = require('path');
+const cors = require('cors');
 
 //induces order 
     //use 
@@ -25,7 +26,7 @@ app.use(methodOverride("_method"));
 //app.use(express.static("public")); // serve files from public statically
 //app.use('/public', express.static('public'));
 app.use(express.static(__dirname + '/public')); // Keep
-
+app.use(cors({ origin: '*' }));
 //parsing incomming requests
 app.use(express.urlencoded({ extended: false }));
 
